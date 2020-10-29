@@ -23,4 +23,34 @@ public class Triangle{
     double s = (v1.distanceTo(v2)+v2.distanceTo(v3)+v3.distanceTo(v1))/2;
     return (Math.sqrt(s*(s-v1.distanceTo(v2))*(s-v2.distanceTo(v3))*(s-v3.distanceTo(v1))));
   }
+
+  public String classify(){
+    double a = v1.distanceTo(v2);
+    a = a*1000;
+    a = Math.round(a);
+    a = a/1000;
+    double b = v2.distanceTo(v3);
+    b = b*1000;
+    b = Math.round(b);
+    b = b/1000;
+    double c = v3.distanceTo(v1);
+    c = c*1000;
+    c = Math.round(c);
+    c = c/1000;
+    if (a == b && b == c){
+      return "equilateral";
+    }
+    if ((a==b && b!= c)||(b==c && c!=a)||(a==c && c!=b)){
+      return "isosceles";
+    }
+    if (a!=b && a!=c && b!=c){
+      return "scalene";
+    }
+    return ("Error");
+  }
+
+  public String toString(){
+    String answer = "v1";
+    return Double.toString(v1.getX());
+  }
 }
