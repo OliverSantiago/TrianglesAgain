@@ -65,4 +65,16 @@ public class Triangle{
     answer+=")";
     return answer;
   }
+
+  public void setVertex(int index, Point newP){
+    if (index == 1){
+      v1 = new Point(newP);
+    }
+    if (index == 2){
+      v2 = new Point(newP);
+    }
+    if (index == 3){
+      v3 = new Point(newP);
+    }
+  }
 }
