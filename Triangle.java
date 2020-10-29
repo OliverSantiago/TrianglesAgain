@@ -50,7 +50,19 @@ public class Triangle{
   }
 
   public String toString(){
-    String answer = "v1";
-    return Double.toString(v1.getX());
+    String answer = "v1(";
+    answer+=Double.toString(v1.getX());
+    answer+=",";
+    answer+=Double.toString(v1.getY());
+    answer+=") v2(";
+    answer+=Double.toString(v2.getX());
+    answer+=",";
+    answer+=Double.toString(v2.getY());
+    answer+=") v3(";
+    answer+=Double.toString(v3.getX());
+    answer+=",";
+    answer+=Double.toString(v3.getY());
+    answer+=")";
+    return answer;
   }
 }
