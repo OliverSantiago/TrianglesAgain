@@ -8,5 +8,7 @@ public class PointTester{
     Triangle First = new Triangle(One, Two, Three);
     System.out.println(First.getPerimeter());
     System.out.println(First.getArea());
+    System.out.println(First.classify());
+    System.out.println(First.toString());
   }
 }
