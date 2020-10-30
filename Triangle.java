@@ -26,17 +26,17 @@ public class Triangle{
 
   public String classify(){
     double a = v1.distanceTo(v2);
-    a = a*1000;
+    a = a*10000;
     a = Math.round(a);
-    a = a/1000;
+    a = a/10000;
     double b = v2.distanceTo(v3);
-    b = b*1000;
+    b = b*10000;
     b = Math.round(b);
-    b = b/1000;
+    b = b/10000;
     double c = v3.distanceTo(v1);
-    c = c*1000;
+    c = c*10000;
     c = Math.round(c);
-    c = c/1000;
+    c = c/10000;
     if (a == b && b == c){
       return "equilateral";
     }
