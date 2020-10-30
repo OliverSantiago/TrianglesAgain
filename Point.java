@@ -26,7 +26,7 @@ public class Point{
   }
 
   public boolean equals(Point other){
-    if (Double.compare(other.x,x)==0&&Double.compare(other.y,y)==0){
+    if (other != null && Double.compare(other.x,x)==0&&Double.compare(other.y,y)==0){
       return true;
     }
     return false;
